@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RegisterUser</string>
+    <string name="choose_status">Choose Status:</string>
+    <string name="register">Register</string>
+    <string name="user_info">User Info</string>
+    <string name="user_status">User Status:</string>
+    <string name="phone">Phone:</string>
+    <string name="password">Password:</string>
+    <string name="email">Email:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="first_name">First Name:</string>
+    <string name="username">UserName:</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_phone">Enter Phone</string>
+</resources>
