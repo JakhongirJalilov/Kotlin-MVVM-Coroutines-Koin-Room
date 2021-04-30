@@ -1,6 +1,5 @@
 package com.example.registeruser.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -30,7 +29,6 @@ class InfoViewModel(private val api: ApiInterface) : ViewModel() {
                 val response = api.getUser(username)
                 if (response.code() == 200) {
                     withContext(Dispatchers.Main) {
-                        Log.i("ZZZZ", "${response.body()}")
                         isLoading.value = false
                         userData.value =
                             response.body()
@@ -42,12 +40,10 @@ class InfoViewModel(private val api: ApiInterface) : ViewModel() {
                 withContext(Dispatchers.Main) {
                     isLoading.value = false
                 }
-                Log.d("TTTT", "HttpException: " + e.message())
             } catch (e: Throwable) {
                 withContext(Dispatchers.Main) {
                     isLoading.value = false
                 }
-                Log.d("TTTT", "Ooops: Something else went wrong: $e")
             }
         }
         return userData
